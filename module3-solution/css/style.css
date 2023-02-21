@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #ffff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Header */
+#header-nav {
+    background-color: #999999;
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+#navbar {
+   margin-top: 1rem !important;
+   margin-bottom: 1rem;
+}
+
+.navbar-brand h1 {  
+    font-family: 'Lora', serif;
+    color: black;
+    line-height: .75;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+}
+
+#nav-list {
+    text-align: center;
+    background-color: #ffff;
+    color: black;  
+}
+
+#nav-list li {
+    border: 1px solid black;
+    width: 100%;
+    font-weight: bold;
+}
+/* header ends */
+
+/* main content */
+#menu-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+#chicken-tile, #beef-tile, #sushi-tile {
+    background-color: #999999;
+    color: black;
+    height: 1000px;
+    width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 15px;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+#link:hover {
+    color: #999999
+}
+
