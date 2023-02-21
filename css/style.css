@@ -325,9 +325,13 @@ h3.menu-item-title {
 
 /*extra small devices only */
 @media(max-width: 767px) {
+    #nav-list {
+        margin-top: 2rem;
+    }
+    
     .navbar-brand h1 {
         padding-top: .0.6em;
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .navbar-brand p {
@@ -369,9 +373,18 @@ h3.menu-item-title {
 
 /* extra small */
 @media (max-width: 575px) {
+    #nav-list {
+        margin-top: 2rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 6.4vw !important;
+    }
+    
     #menu-tile, #specials-tile {
         width: 360px; 
         margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     .navbar-brand h1 {
