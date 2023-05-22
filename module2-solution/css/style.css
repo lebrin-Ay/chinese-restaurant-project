@@ -109,7 +109,7 @@ section {
 }
 
 /* Mobile view */
-@media (max-width: 767px) {
+@media (min-width: 100px) and (max-width: 767px) {
     main {
         display: grid;
         grid-auto-flow: row;
