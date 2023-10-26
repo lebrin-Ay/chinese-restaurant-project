@@ -39,6 +39,10 @@ body {
     text-shadow: 1px 1px 1px #222;
 }
 
+.navbar-toggler {
+    border-color: #951c49 !important;
+}
+
 .navbar-brand a, a:hover, .navbar-brand a:focus {
     text-decoration: none;
 }
@@ -54,9 +58,8 @@ body {
     vertical-align: middle;
 }
 
-#nav-list {
-    font-size: 1.4em;
-    /* outline: 1px solid red; */
+.navbar-nav {
+    font-size: 1.2em;
 }
 
 .navbar-nav {
@@ -65,9 +68,14 @@ body {
 
 }
 
+.nav-icon {
+    height: 35px;
+}
+
 .navbar-nav li.active > a {
-    background: #Efe7e7;
+    /* background: #Efe7e7; */
 	color: #fff;
+    border-bottom: 3px solid #Efe7e7;
 }
 
 #nav-list a {
@@ -75,8 +83,16 @@ body {
     text-align: center;
 }
 
-#nav-list a:hover {
-    background: #Efe7e7;
+.nav-item {
+    margin-right: 1rem;  
+    font-size: .9em;
+    /* font-weight: bold; */
+}
+
+.nav-link:hover {
+    /* background: #Efe7e7; */
+    cursor: pointer;
+    border-bottom: 3px solid #Efe7e7;
 }
 
 #nav-list a span {
@@ -271,13 +287,23 @@ h3.menu-item-title {
 }
 /* Single Category Page ends */
 
+/* award page */
+.awardMain {
+    margin-top: 15rem;
+    margin-bottom: 3.2rem;
+}
+
 /*Large devices only */
 @media(min-width: 1200px) {
     .jumbotron {
         background: url('/images/jumbotron_1200.jpg') no-repeat;
         height: 675px;
-        margin-top: 1rem;
+        margin-top: 13rem;
     }
+    #main-content {
+        margin-top: 13rem;
+    }
+    
 }
 
 /*Medium devices only */
@@ -290,8 +316,12 @@ h3.menu-item-title {
     background: url('/images/jumbotron_992.jpg') no-repeat;
     height: 558px;
    
-    margin-top: 1rem;
+    margin-top: 13rem;
    }
+   #main-content {
+    margin-top: 13rem;
+}
+
 }
 
 /*small devices only */
@@ -323,8 +353,12 @@ h3.menu-item-title {
     .jumbotron {
         background: url('/images/jumbotron_768.jpg') no-repeat;
         height: 432px;
-        margin-top: 1rem;
-       }
+        margin-top: 14.6rem;
+    }
+    #main-content {
+        margin-top: 14.6rem;
+    }
+    
 }
 
 /*extra small devices only */
@@ -332,10 +366,30 @@ h3.menu-item-title {
     #nav-list {
         margin-top: 2rem;
     }
+    #navHome {
+        margin-bottom: 1.5rem;
+    }
+
+    #navMenu {
+        margin-bottom: 1.5rem;
+    }
+    #navAbout {
+        margin-bottom: 1.5rem;
+    }
+    .navbar-nav li.active > a {
+        border-bottom: 3px solid #Efe7e7;
+    }
+    .nav-link:hover {
+        background: #Efe7e7;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
 
     .navbar-brand h1 {
         padding-top: .0.6em;
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .navbar-brand p {
@@ -370,8 +424,13 @@ h3.menu-item-title {
         margin-top: 30px;
         padding: 0;
     }
-
-    
+    #main-content {
+        margin-top: 3rem;
+    }
+    /* award */
+    .awardMain {
+        margin-top: 3rem;
+    }     
 
 }
 
@@ -382,7 +441,7 @@ h3.menu-item-title {
     }
 
     .navbar-brand h1 {
-        font-size: 6.4vw !important;
+        font-size: 5vw !important;
     }
     
     #menu-tile, #specials-tile {
@@ -426,4 +485,12 @@ h3.menu-item-title {
         width: 240px; 
         margin: 0 auto;
     }
+    #main-content {
+        margin-top: 5rem;
+    }
+    /* award */
+    .awardMain {
+        margin-top: 6rem;
+    }     
+    
 }
